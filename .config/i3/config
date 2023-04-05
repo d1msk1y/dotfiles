@@ -197,9 +197,9 @@ bindsym Mod1+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-  status_command exec /home/d1msk1y/.config/i3status/mybar.sh
-}
+#bar {
+#  status_command exec /home/d1msk1y/.config/i3status/mybar.sh
+#}
 
 set $mod Mod4
 
@@ -207,6 +207,16 @@ set $mod Mod4
 for_window [class=".*"] border pixel 0
 gaps outer 10
 gaps inner 10
+
+## Screenshots
+bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
+bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date)"
+bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/$(date)"
+
+## Clipboard Screenshots
+bindsym Ctrl+Print exec --no-startup-id maim | xclip -selection clipboard -t image/png
+bindsym Ctrl+$mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
 
 
 #######################################################################
