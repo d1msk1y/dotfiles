@@ -237,7 +237,8 @@ client.urgent           $red        $red        $fg     $red        $red
 client.placeholder      $bg         $bg         $fg     $bg         $bg
 client.background 	$bg
 
-exec_always "setxkbmap -model pc104 -layout us,ru,ua -variant ,, -option grp:ctrl_shift_toggle"
+# Language switching
+exec_always "setxkbmap -model pc104 -layout us,ru,ua -variant ,, -option grp:shift_toggle"
 
 #######################################################################
 # automatically start i3-config-wizard to offer the user to create a
@@ -250,6 +251,6 @@ exec_always "setxkbmap -model pc104 -layout us,ru,ua -variant ,, -option grp:ctr
 # Please remove the following exec line:
 #######################################################################
 exec i3-config-wizard
-exec ~/.config/polybar/launch.sh
+exec polybar
 exec nitrogen --restore
 exec picom
