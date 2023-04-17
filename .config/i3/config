@@ -254,3 +254,4 @@ exec i3-config-wizard
 exec polybar
 exec nitrogen --restore
 exec picom
+# exec ~/.screenlayout/default.sh
