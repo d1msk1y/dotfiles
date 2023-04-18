@@ -201,12 +201,13 @@ bindsym Mod1+r mode "resize"
 #  status_command exec /home/d1msk1y/.config/i3status/mybar.sh
 #}
 
-set $mod Mod4
+set $mod Mod1
+set $sup Mod4
 
 # Gaps
 for_window [class=".*"] border pixel 2
-gaps outer 10
-gaps inner 10
+gaps outer 2
+gaps inner 2
 
 ## Screenshots
 bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
@@ -238,10 +239,10 @@ client.placeholder      $bg         $bg         $fg     $bg         $bg
 client.background 	$bg
 
 # Language switching
-exec_always "setxkbmap -model pc104 -layout us,ru,ua -variant ,, -option grp:shift_toggle"
+exec_always "setxkbmap -model pc104 -layout us,ru,ua -variant ,, -option grp:rctrl_rshift_toggle"
 
-#######################################################################
-# automatically start i3-config-wizard to offer the user to create a
+
+#automatically start i3-config-wizard to offer the user to create a
 # keysym-based config which used their favorite modifier (alt or windows)
 #
 # i3-config-wizard will not launch if there already is a config file
@@ -251,7 +252,9 @@ exec_always "setxkbmap -model pc104 -layout us,ru,ua -variant ,, -option grp:shi
 # Please remove the following exec line:
 #######################################################################
 exec i3-config-wizard
+exec ~/.screenlayout/default.sh
 exec polybar
 exec nitrogen --restore
 exec picom
-# exec ~/.screenlayout/default.sh
+
+
