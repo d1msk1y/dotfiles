@@ -248,6 +248,10 @@ exec_always "setxkbmap -model pc104 -layout us,ru,ua -variant ,, -option grp:rct
 bindsym Shift+Ctrl+$mod+$left exec i3-msg move workspace to output left
 bindsym Shift+Ctrl+$mod+$right exec i3-msg move workspace to output right
 
+#rofi
+bindsym Shift+$mod+D exec rofi -show run
+bindsym Shift+Ctrl+$mod+D exec rofi -show window
+
 #automatically start i3-config-wizard to offer the user to create a
 # keysym-based config which used their favorite modifier (alt or windows)
 #
