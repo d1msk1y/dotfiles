@@ -209,7 +209,7 @@ set $mod Mod1
 
 # Gaps
 for_window [class=".*"] border pixel 2
-gaps outer 2
+#gaps outer 0
 gaps inner 2
 
 ## Screenshots
@@ -242,7 +242,7 @@ client.placeholder      $bg         $bg         $fg     $bg         $bg
 client.background 	$bg
 
 # Language switching
-exec_always "setxkbmap -model pc104 -layout us,ru,ua -variant ,, -option grp:rctrl_rshift_toggle"
+exec_always setxkbmap -model pc104 -layout us,ru,ua -variant ,, -option grp:rctrl_rshift_toggle
 
 # Workspace move
 bindsym Shift+Ctrl+$mod+$left exec i3-msg move workspace to output left
@@ -266,4 +266,4 @@ exec ~/.screenlayout/default.sh
 exec polybar
 exec nitrogen --restore
 exec picom
-
+#exec_always --no-startup-id $HOME/polybar-collection/launch.sh
