@@ -209,8 +209,8 @@ set $mod Mod1
 
 # Gaps
 for_window [class=".*"] border pixel 2
-#gaps outer 0
-gaps inner 2
+#gaps outer 10
+gaps inner 20
 
 ## Screenshots
 bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
@@ -222,24 +222,12 @@ bindsym Ctrl+Print exec --no-startup-id maim | xclip -selection clipboard -t ima
 bindsym Ctrl+$mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
 bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
 
-# Themes
-set $bg       #fbf1c7
-set $fg       #654735
-set $red      #c14a4a
-set $orange   #98971A
-set $green    #6c782e
-set $blue     #45707a
-set $purple   #945e80
-set $aqua     #4c7a5d
-set $darkgray #fbf1c7
-
-#       Gruvbox Theme   brdr        bg          text    indictr     chld_brdr
-client.focused          $orange     $orange     $bg     $orange     $orange
-client.focused_inactive $aqua       $aqua       $b	g     $aqua       $aqua
-client.unfocused        $bg         $bg         $fg     $bg         $bg
-client.urgent           $red        $red        $fg     $red        $red
-client.placeholder      $bg         $bg         $fg     $bg         $bg
-client.background 	$bg
+client.background #1d1f21
+client.focused #c5c8c6 #1d1f21 #c5c8c6 #81a2be #81a2be
+client.unfocused #c5c8c6 #1d1f21 #c5c8c6 #5f819d #5f819d
+client.focused_inactive #c5c8c6 #1d1f21 #c5c8c6 #5f819d #5f819d
+client.urgent #c5c8c6 #1d1f21 #c5c8c6 #5f819d #5f819d
+client.placeholder #c5c8c6 #1d1f21 #c5c8c6 #5f819d #5f819d
 
 # Language switching
 exec_always setxkbmap -model pc104 -layout us,ru,ua -variant ,, -option grp:rctrl_rshift_toggle
@@ -266,4 +254,5 @@ exec ~/.screenlayout/default.sh
 exec polybar
 exec nitrogen --restore
 exec picom
+exec ~/.config/wallpaper_changer.sh
 #exec_always --no-startup-id $HOME/polybar-collection/launch.sh
