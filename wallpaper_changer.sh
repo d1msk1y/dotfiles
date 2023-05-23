@@ -22,7 +22,12 @@ declare -A WALLPAPERS=(
 )
 
 set_wallpaper() {
-  nitrogen --set-zoom-fill "$1"
+  monitors=$(xrandr --listmonitors)
+  wallpaper="$1"
+  
+  for monitor in $monitors; do
+    nitrogen --set-zoom-fill --head=$monitor "$wallpaper"
+  done
 }
 
 change_wallpaper() {
