@@ -208,9 +208,9 @@ set $mod Mod1
 #set $sup Mod1
 
 # Gaps
-for_window [class=".*"] border pixel 2
+for_window [class=".*"] border pixel 1
 #gaps outer 10
-gaps inner 20
+gaps inner 10
 
 ## Screenshots
 bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
@@ -251,8 +251,6 @@ bindsym Shift+Ctrl+$mod+D exec rofi -show window
 #######################################################################
 exec i3-config-wizard
 exec ~/.screenlayout/default.sh
-exec polybar
-exec nitrogen --restore
 exec picom
 exec ~/.config/wallpaper_changer.sh
-#exec_always --no-startup-id $HOME/polybar-collection/launch.sh
+exec_always --no-startup-id $HOME/polybar-collection/launch.sh
