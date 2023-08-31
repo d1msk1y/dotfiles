@@ -1,0 +1,6 @@
+exec i3-config-wizard
+exec ~/.screenlayout/default.sh
+exec picom
+exec_always --no-startup-id $HOME/polybar-collection/launch.sh
+exec nitrogen --restore
+exec NetworkManager
