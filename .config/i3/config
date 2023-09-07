@@ -59,6 +59,8 @@ tiling_drag modifier titlebar
 # start a terminal
 bindsym $mod+Return exec kitty
 
+
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -208,9 +210,9 @@ set $mod Mod4
 #set $sup $mod
 
 # Gaps
-for_window [class=".*"] border pixel 1
+for_window [class=".*"] border pixel 2
 #gaps outer 10
-gaps inner 10
+gaps inner 20
 
 ## Screenshots
 bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
@@ -252,6 +254,6 @@ bindsym Shift+Ctrl+$mod+D exec rofi -show window
 exec i3-config-wizard
 exec ~/.screenlayout/default.sh
 exec picom
-exec ~/.config/wallpaper_changer.sh
 exec_always --no-startup-id $HOME/polybar-collection/launch.sh
-exec xrandr --output eDP-1 --mode 3000x2000 --pos 3843x0 --rotate normal --output DP-1 --off --output HDMI-1 --off --output DP-1-1 --primary --mode 1920x1200 --pos 1923x0 --rotate normal --output DP-1-2 --mode 1920x1200 --pos 0x0 --rotate normal
+exec nitrogen --restore
+exec NetworkManager
