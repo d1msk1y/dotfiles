@@ -1,4 +1,4 @@
-#
+	#
 # ~/.bashrc
 #
 
@@ -9,4 +9,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
-neofetch
+#neofetch --ascii ~/ascii.txt
+neofetch --source ~/.config/neofetch/neofetch-img/img.png --image_size 200
+
+eval "$(thefuck --alias)"
