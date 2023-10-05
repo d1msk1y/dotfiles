@@ -211,6 +211,7 @@ set $mod Mod4
 
 # Gaps
 for_window [class=".*"] border pixel 3
+for_window [class="GLava"] border none
 for_window [class="polybar"] gaps outer 0
 for_window [class="polybar"] gaps inner 0
 #gaps outer 30
