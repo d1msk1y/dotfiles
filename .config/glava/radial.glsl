@@ -16,7 +16,7 @@
 /* Amplify magnitude of the results each bar displays */
 #define AMPLIFY 600
 /* Bar color */ 
-#define COLOR (#BB5424 * ((d / 100) + 1))
+#define COLOR (#50A89C * ((d / 200) + 1))
 /* Angle (in radians) for how much to rotate the visualizer */
 #define ROTATE (PI / 2)
 /* Whether to switch left/right audio buffers */

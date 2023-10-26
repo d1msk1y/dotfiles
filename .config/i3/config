@@ -215,7 +215,7 @@ for_window [class="GLava"] border none
 for_window [class="polybar"] gaps outer 0
 for_window [class="polybar"] gaps inner 0
 #gaps outer 30
-gaps inner 20
+gaps inner 30
 
 ## Screenshots
 bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
@@ -227,13 +227,14 @@ bindsym Ctrl+Print exec --no-startup-id maim | xclip -selection clipboard -t ima
 bindsym Ctrl+$mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
 bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
 
-# Color Palette
-client.background #32302f
-client.focused #f0dbac #32302f #f0dbac #665c54 #665c54
-client.unfocused #a89984 #32302f #a89984 #3c3836 #3c3836
-client.focused_inactive #a89984 #32302f #a89984 #3c3836 #3c3836
-client.urgent #cc241d #32302f #cc241d #3c3836 #3c3836
-client.placeholder #fabd2f #32302f #fabd2f #3c3836 #3c3836
+# Light Gruvbox Color Palette
+client.background #f9f5d7
+client.focused #3c3836 #f9f5d7 #3c3836 #7c6f64 #7c6f64
+client.unfocused #504945 #f9f5d7 #504945 #ebdbb2 #ebdbb2
+client.focused_inactive #504945 #f9f5d7 #504945 #ebdbb2 #ebdbb2
+client.urgent #9d0006 #f9f5d7 #9d0006 #ebdbb2 #ebdbb2
+client.placeholder #b57614 #f9f5d7 #b57614 #ebdbb2 #ebdbb2
+
 
 # Language switching
 exec_always setxkbmap -model pc104 -layout us,ru,ua -variant ,, -option grp:rctrl_rshift_toggle
@@ -261,5 +262,5 @@ exec picom
 exec_always --no-startup-id $HOME/polybar-collection/launch.sh
 exec nitrogen --restore
 exec sudo NetworkManager
-exec spotify-launcher
-exec darkman set dark
+exec spotify
+exec darkman set light
