@@ -1,0 +1,12 @@
+# Node
+npm-debug.log
+
+# Inteliji
+.idea/
+
+# vi
+*~
+
+# General
+log/
+*.log
