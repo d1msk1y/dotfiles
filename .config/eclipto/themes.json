@@ -1,0 +1,16 @@
+{
+    "themes": {
+        "gruvbox": {
+            "kitty": "/home/dmytro/.config/kitty/themes/Gruvbox Dark Soft.conf",
+            "wallpaper": "/home/dmytro/documents/wallpapers/Gruvbox/minimalistic/ALLqk82.png",
+            "rofi": "@theme \"/usr/share/rofi/themes/gruvbox-dark-soft.rasi\"",
+            "polybar": "gruvbox"
+        },
+        "gruvbox-light": {
+            "kitty": "/home/dmytro/.config/kitty/themes/Gruvbox Material Light Medium.conf",
+            "wallpaper": "/home/dmytro/documents/wallpapers/Gruvbox/light/cyber-girl-light.png",
+            "rofi": "@theme \"/usr/share/rofi/themes/gruvbox-light-hard.rasi\"",
+            "polybar": "gruvbox-light"
+        }
+    }
+}
