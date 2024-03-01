@@ -210,7 +210,7 @@ set $mod Mod4
 #set $sup $mod
 
 # Gaps
-for_window [class=".*"] border pixel 0
+for_window [class=".*"] border pixel 1
 for_window [class="GLava"] border none
 for_window [class="polybar"] gaps outer 0
 for_window [class="polybar"] gaps inner 0
@@ -219,7 +219,7 @@ for_window [class="plank"] border none
 for_window [class="plank"] floating enable
 for_window [class="plank"] gaps outer 0
 for_window [class="plank"] gaps inner 0
-#gaps outer 30
+# gaps outer 30
 gaps inner 30
 
 ## Screenshots
@@ -233,12 +233,12 @@ bindsym Ctrl+$mod+Print exec --no-startup-id maim --window $(xdotool getactivewi
 bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
 
 # Light Gruvbox Color Palette
-client.background #f9f5d7
-client.focused #3c3836 #f9f5d7 #3c3836 #7c6f64 #7c6f64
-client.unfocused #504945 #f9f5d7 #504945 #ebdbb2 #ebdbb2
-client.focused_inactive #504945 #f9f5d7 #504945 #ebdbb2 #ebdbb2
-client.urgent #9d0006 #f9f5d7 #9d0006 #ebdbb2 #ebdbb2
-client.placeholder #b57614 #f9f5d7 #b57614 #ebdbb2 #ebdbb2
+client.background #524B3B
+client.focused #3c3836 #5C5B51 #3c3836 #7c6f64 #7c6f64
+client.unfocused #504945 #5C5B51 #504945 #524B3B #524B3B
+client.focused_inactive #504945 #5C5B51 #504945 #524B3B #524B3B
+client.urgent #9d0006 #5C5B51 #9d0006 #524B3B #524B3B
+client.placeholder #b57614 #5C5B51 #b57614 #524B3B #524B3B
 
 
 # Language switching
@@ -254,6 +254,10 @@ bindsym $mod+n exec --no-startup-id flash_window
 #rofi
 bindsym Shift+$mod+D exec rofi -i -show run -show-icons
 bindsym Ctrl+$mod+D exec rofi -i -show window -show-icons
+
+
+#floating
+for_window [class="Microsoft Teams - Preview"] floating enable
 
 #automatically start i3-config-wizard to offer the user to create a
 # keysym-based config which used their favorite modifier (alt or windows)

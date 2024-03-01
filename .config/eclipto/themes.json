@@ -4,13 +4,33 @@
             "kitty": "/home/dmytro/.config/kitty/themes/Gruvbox Dark Soft.conf",
             "wallpaper": "/home/dmytro/documents/wallpapers/Gruvbox/minimalistic/ALLqk82.png",
             "rofi": "@theme \"/usr/share/rofi/themes/gruvbox-dark-soft.rasi\"",
-            "polybar": "gruvbox"
+            "polybar": "gruvbox",
+	    	"commands": ["echo 'Im a Test Command'"],
+	    	"gtk3": "/home/dmytro/.config/eclipto/gtk/gruvbox"
         },
         "gruvbox-light": {
-            "kitty": "/home/dmytro/.config/kitty/themes/Gruvbox Material Light Medium.conf",
+   		    "kitty": "/home/dmytro/.config/kitty/themes/Gruvbox Material Light Medium.conf",
             "wallpaper": "/home/dmytro/documents/wallpapers/Gruvbox/light/cyber-girl-light.png",
             "rofi": "@theme \"/usr/share/rofi/themes/gruvbox-light-hard.rasi\"",
-            "polybar": "gruvbox-light"
+            "polybar": "gruvbox-light",
+		    "commands": ["echo 'Switching To Light Gruvbox'"],
+ 		    "gtk3": "/home/dmytro/.config/eclipto/gtk/gruvbox-light"
+        },
+        "minigruv": {
+            "kitty": "/home/dmytro/.config/kitty/themes/Gruvbox Dark Trans.conf",
+            "wallpaper": "/home/dmytro/documents/wallpapers/Gruvbox/minimalistic/ALLqk82.png",
+            "rofi": "@theme \"/usr/share/rofi/themes/gruvbox-dark-soft.rasi\"",
+            "polybar": "gruvbox",
+	    	"commands": ["echo 'Im a Test Command'"],
+	    	"gtk3": "/home/dmytro/.config/eclipto/gtk/gruvbox"
+        },
+        "minigruv-light": {
+            "kitty": "/home/dmytro/.config/kitty/themes/Gruvbox Light Trans.conf",
+            "wallpaper": "/home/dmytro/documents/wallpapers/Gruvbox/light/cyber-girl-light.png",
+            "rofi": "@theme \"/usr/share/rofi/themes/gruvbox-light-hard.rasi\"",
+            "polybar": "gruvbox-light",
+		    "commands": ["echo 'Switching To Light Gruvbox'"],
+ 		    "gtk3": "/home/dmytro/.config/eclipto/gtk/gruvbox-light"
         }
     }
 }
