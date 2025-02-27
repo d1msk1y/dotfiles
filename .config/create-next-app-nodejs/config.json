@@ -1,0 +1,10 @@
+{
+	"preferences": {
+		"eslint": true,
+		"tailwind": true,
+		"srcDir": true,
+		"app": true,
+		"turbopack": true,
+		"importAlias": "@/*"
+	}
+}

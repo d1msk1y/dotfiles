@@ -1,0 +1,34 @@
+{
+	"motd": {
+		"cloudBuildErrorAfter": 1594252800000,
+		"cloudBuildWarnAfter": 1590019200000,
+		"defaultNode10After": 1594252800000,
+		"minVersion": "3.0.5",
+		"node8DeploysDisabledAfter": 1613390400000,
+		"node8RuntimeDisabledAfter": 1615809600000,
+		"node8WarnAfter": 1600128000000,
+		"fetched": 1740552168707
+	},
+	"usage": true,
+	"analytics-uuid": "4562c817-a160-47c6-a281-e77d74779dd6",
+	"user": {
+		"iss": "accounts.google.com",
+		"azp": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"aud": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"sub": "112266019554212220125",
+		"email": "scc@lehmann.ch",
+		"email_verified": true,
+		"at_hash": "jiq4TYakb9prcCdHbbIZnA",
+		"iat": 1740552180,
+		"exp": 1740555780
+	},
+	"tokens": {
+		"expires_at": 1740555779925,
+		"access_token": "ya29.a0AeXRPp7AUTubPJVl4S9UzBjfFzpnWldu0xnQDMYGGuOI7LjpepfiaO8GhZXmAmKe1JBUrjA5K3t7SkdyxMgAAi8jd4eZ4CD_i-tKrMDNlPjcPSaXPs13wr7yUhHe-9IlGCo7--2X0lGvLYnnJ0Yg10hYIgIyAXESWKuXeDI3ckFV2QaCgYKAXISARMSFQHGX2MiMaipxvOHrjRQt-VeBdGCIQ0181",
+		"expires_in": 3599,
+		"refresh_token": "1//033ffgPT8x52wCgYIARAAGAMSNwF-L9IrZ6eUyjwpzrCBKDzsmDT8QH0sXeimD5ydkfT931J6dA8w-hoRa6WJixpLXElQnMI-0h8",
+		"scope": "https://www.googleapis.com/auth/cloudplatformprojects.readonly openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/firebase",
+		"token_type": "Bearer",
+		"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc2M2Y3YzRjZDI2YTFlYjJiMWIzOWE4OGY0NDM0ZDFmNGQ5YTM2OGIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTEyMjY2MDE5NTU0MjEyMjIwMTI1IiwiZW1haWwiOiJzY2NAbGVobWFubi5jaCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiamlxNFRZYWtiOXByY0NkSGJiSVpuQSIsImlhdCI6MTc0MDU1MjE4MCwiZXhwIjoxNzQwNTU1NzgwfQ.vk5rEFcRkTc2R3TNKhlhFo9lTRWWU3SmTJHmJTMlLnqPwDO6iWn9DY-Db7NLp2194TFAKCaM8j1dWz1JK5YtIPN_ko4qZrqBKOwewc717fJX3d0bfWygnxm6al29rhtDYTHHcbIPAOzqfV6AOUMZvfD7dJVPl3mtPBPTkTn88YurcNeOPTOCb1DBpJM__G9K89gBELDSKQfaYKa-TFnwUX1mssyGw6po_o6XCGTNHHfOFUqHayB1Y3ujS-_PjHHQpyRnTcrmooys1OqhAdTRIaYTddfvTyzGVlfi-C9NI0hb74ib8vfj7bOuxgMJog8GUeEV82HnJDpBuMieNfkHfw"
+	}
+}

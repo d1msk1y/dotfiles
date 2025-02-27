@@ -1,8 +1,6 @@
-	#
+#
 # ~/.bashrc
 #
-
-LC_ALL=en_US.UTF-8 2>/dev/null
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -11,16 +9,6 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
-#neofetch --ascii ~/ascii.txt
-neofetch --source ~/.config/neofetch/neofetch-img/img.png --image_size 200
-
-eval "$(thefuck --alias)"
-
-alias winhome='cd /wome/dmytro.yatsenko/'
-alias onedrive="cd '/wome/dmytro.yatsenko/OneDrive - A. Lehmann Elektro AG'"
-
-source ~/git-completion.bash
-
 # If not running interactively, don't do anything
 case $- in
   *i*) ;;
@@ -28,11 +16,11 @@ case $- in
 esac
 
 # Path to the bash it configuration
-export BASH_IT="/home/dmytro/bash-it"
+export BASH_IT="/home/dmytro/.bash_it"
 
 # Lock and Load a custom theme file.
 # Leave empty to disable theming.
-# location /.bash_it/themes/
+# location "$BASH_IT"/themes/
 export BASH_IT_THEME='bira'
 
 # Some themes can show whether `sudo` has a current token or not.
@@ -103,9 +91,13 @@ export SCM_CHECK=true
 
 # Load Bash It
 source "$BASH_IT"/bash_it.sh
-export IOTHUB_DEVICE_CONNECTION_STRING="HostName=agrola-iot.azure-devices.net;DeviceId=siemens;SharedAccessKey=J4AhKGPVxCVEiiQG13O3ZDxL5xOB65fseAIoTKs5vUg="
-export DEVICE_ID="siemens"
+source /usr/share/bash-completion/completions/git
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+alias windows="cd /mnt/c/Users/dmytro.yatsenko/"
+
+
+export PATH="/bin/balena-cli:$PATH"
